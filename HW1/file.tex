@@ -74,8 +74,16 @@ The probability of getting an error is effectively the probability of getting
 This is just the CDF of a binomial distribution with $n=5$ and $p=0.2$, evaluated at $x=2$, which is $0.99144$. Therefore we have that
 $$P_{error}=1-0.99144=\boxed{0.00856}$$
 \section*{Problem 7}
+\subsection*{(a)}
 Since order doesn't matter, we have the following possibilities for Jane's children
-BBB,GGG, BBG, GGB, with boy denoted by B, and girl denoted as G. 
-
+BBB,GGG, BBG, GGB, with boy denoted by B, and girl denoted as G. We have that
+$$P(B|A)=\frac{1}{2}=P(B)$$
+Therefore B is independent of A. Likewise we have
+$$P(C|B)=\frac{1}{2}=P(C)$$
+\subsection*{(b)}
+No, because if C is true, then the family has both a boy and a girl, and thus
+A is not true. 
+\subsection*{(c)}
+No, let 
 
 \end{document}
