@@ -1,0 +1,33 @@
+\include{"../preamble.tex"}
+\title{ECE 131A HW 1}
+\begin{document}
+\maketitle
+\section*{Problem 1}
+\subsection*{(a)}
+The sample space is just all the combinations of the two dice, with $r$ denoting the 
+bottom face of the red die and $g$ denoting the bottom face of the green die. Therefore the sample space
+is just all the 16 orderd sets possible combinations of the possible results of $r$ and $g$. In other words, the sample space is
+
+\begin{empheq}[box=\widefbox]{align*}
+    \{
+        (1,1), (1,2), (1,3), (1,4),& (2,1), (2,2), (2,3), (2,4), \\
+        (3,1), (3,2), (3,3), (3,4),& (4,1), (4,2), (4,3), (4,4)
+    \}  
+\end{empheq}
+\subsection*{(b)}
+\subsubsection*{(i)}
+$$E=\boxed{\{(1, 1), (1, 3), (3, 1), (3, 3)\}}$$
+$$F=\boxed{\{(1, 4), (2, 3), (3, 2), (4, 1)\}}$$
+\subsubsection*{(ii)}
+Since $E$ requires all values to be odd, and thus their sum to be even
+and $F$ requires the sum of the values to be odd (5), these sets are disjoint,
+thus:
+$$E\cap F=\boxed{\emptyset}$$
+\subsubsection*{(iii)}
+$$E\cup F=\boxed{\{(1, 1), (1, 3), (3, 1), (3, 3), (1, 4), (2, 3), (3, 2), (4, 1)\}}$$
+\subsubsection*{(iv)}
+$G^c$ is effectively just all value sof $g$ and $g$ such that
+$g+r\geq 7$, thus
+$$G^{c}=\boxed{\{(3, 4), (4, 3), (4, 4)\}}$$
+
+\end{document}
