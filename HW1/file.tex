@@ -40,4 +40,16 @@ $$p=\begin{cases}
     0 & \text{if } m>k\\
     \frac{{k\choose m}\cdot {(100-k)\choose M-m}}{{100\choose M}} & \text{if } m\leq k
 \end{cases}$$
+\section*{Problem 4}
+\subsection*{(a)}
+STATISTICS is a 10 letter word, therefore if every letter was unique, we would have
+$10!$ possible ways to arrange the words. However not every letter is unique, there are 2 occurences of I, and
+3 occurences of S, and 3 occurences of T. Therefore the number of possible ways to arrange the letters is 
+$$\frac{10!}{2!3!3!}=\boxed{50400}$$
+\subsection*{(b)}
+We can effectively treat the two "I"s together as one letter, so then we would
+have the total arrangements of the letters in STATISTICS with the two "I"s together 
+is $\frac{9!}{3!3!}$. Therefore the probability of this occurence is 
+$$\frac{\frac{9!}{3!3!}}{50400}=\boxed{\frac{1}{5}}$$
+\section*{Problem 5}
 \end{document}
