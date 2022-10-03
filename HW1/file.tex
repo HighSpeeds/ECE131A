@@ -76,7 +76,10 @@ $$P_{error}=1-0.99144=\boxed{0.00856}$$
 \section*{Problem 7}
 \subsection*{(a)}
 Since order doesn't matter, we have the following possibilities for Jane's children
-BBB,GGG, BBG, GGB, with boy denoted by B, and girl denoted as G. We have that
+BBB,GGG, BBG, GGB, with boy denoted by B, and girl denoted as G. Since 
+BBG and GGB can have three possible permutations, we have that the probabilities for each occurrence
+is $\frac{1}{8}$, $\frac{1}{8}$, $\frac{3}{8}$, $\frac{3}{8}$ for BBB, GGG, GBB, BGG respectively. 
+We have that
 $$P(B|A)=\frac{1}{2}=P(B)$$
 Therefore B is independent of A. Likewise we have
 $$P(C|B)=\frac{1}{2}=P(C)$$
@@ -84,6 +87,12 @@ $$P(C|B)=\frac{1}{2}=P(C)$$
 No, because if C is true, then the family has both a boy and a girl, and thus
 A is not true. 
 \subsection*{(c)}
-No, let 
-
+No, let the probability of getting an boy be $p$, and thus the probability of getting 
+a girl is $1-p$, then we have that the probabilities of getting 
+BBB is $p^3$, GGG is $(1-p)^3$, GBB $3p(1-p)^2$, and BBG $3p^2(1-p)$. 
+Thus we have that 
+$$P(B)=3p(1-p)^2+(1-p)^3$$
+but
+$$P(B|A)=\frac{(1-p)^3}{p^3+(1-p)^3}$$
+Which are different unless $p=\frac{1}{2}$, which is not the case.
 \end{document}
