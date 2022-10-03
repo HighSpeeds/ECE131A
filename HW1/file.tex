@@ -52,4 +52,30 @@ have the total arrangements of the letters in STATISTICS with the two "I"s toget
 is $\frac{9!}{3!3!}$. Therefore the probability of this occurence is 
 $$\frac{\frac{9!}{3!3!}}{50400}=\boxed{\frac{1}{5}}$$
 \section*{Problem 5}
+\subsection*{(a)}
+Let us create a random variable $C$ that represents which coin we flipped. Furthermore let the double headed coins be denoted as $C_h$ and the double tailed coin denoted as $C_t$
+and $C_n$ denote a normal coin. Likewise let $F$ be a random variable that represents the lower face of the coin after it has been tossed, then we have:
+\begin{align*}
+    P(F=\text{heads})&=P(C=C_h)P(F=\text{heads}|C=C_h)+\\&P(C=C_t)P(F=\text{heads}|C=C_t)+P(C=C_n)P(F=\text{heads}|C=C_n)\\
+    &=\frac{2}{5}+\frac{2}{5}\frac{1}{2}\\
+    &=\boxed{\frac{3}{5}}
+\end{align*}
+\subsection*{(b)}
+The only way for both the face showing him and the lower face are both heads, is only possible if both 
+sides are if the coin is a double headed coin. Therefore we have that
+\begin{align*}
+    P(C=C_n|F=\text{heads})&=\frac{P(C=C_n)P(F=\text{heads}|C=C_n)}{P(F=\text{heads})}\\
+    &=\frac{\frac{2}{5}}{\frac{3}{5}}\\
+    &=\boxed{\frac{2}{3}}
+\end{align*}
+\section*{Problem 6}
+The probability of getting an error is effectively the probability of getting 
+3 or more binary errors. This is 1 minus the probability of getting 2 or less binary errors, in 5 transmissions. 
+This is just the CDF of a binomial distribution with $n=5$ and $p=0.2$, evaluated at $x=2$, which is $0.99144$. Therefore we have that
+$$P_{error}=1-0.99144=\boxed{0.00856}$$
+\section*{Problem 7}
+Since order doesn't matter, we have the following possibilities for Jane's children
+BBB,GGG, BBG, GGB, with boy denoted by B, and girl denoted as G. 
+
+
 \end{document}
