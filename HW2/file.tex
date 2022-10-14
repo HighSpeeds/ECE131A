@@ -40,7 +40,83 @@ If we care about the order in which we place the balls in the buckets, the proba
 There are $5!$ ways to order the balls to place into the buckets, so since we do not care about
 the order in which we place the balls in the buckets, the probability that we place all 5 balls in diffrent buckets is $\frac{1}{5^5}\cdot5!=0.0384
 $.
+\subsection*{(c)}
+This is a multnomial permutation so we have
+$$\frac{9!}{4!2!3!}=\boxed{1260}$$
 
+\section*{Problem 3}
+\section*{Problem 4}
+\section*{Problem 5}
+\section*{Problem 6}
+\subsection*{(a)}
+Let the random event denoting whether we recived the correct answer 
+be $C$ and the random event denoting whether we asked a Tourist be 
+$T$. Then we have
 
-
+$$P(C)=P(C|T)P(T)+P(C|T^c)P(T^c)$$
+$$P(C)=\frac{2}{3}\frac{3}{4}=\boxed{\frac{1}{2}}$$
+\subsection*{(b)}
+Let the random event $A_1$ denote our first response, and $A_2$ denote our
+second response we have that
+\begin{align*}
+    P(C|A_1=A_2)&=P(T|A_1=A_2)P(C|A_1=A_2,T)+P(T^c|A_1=A_2)P(C|A_1=A_2,T^c)
+\end{align*}
+Since 
+\begin{align*}
+    P(T|A_1=A_2)&=\frac{P(T)P(A_1=A_2|T)}{P(A_1=A_2)}\\
+    &=\frac{P(T)P(A_1=A_2|T)}{P(A_1=A_2|T)P(T)+P(A_1=A_2|T^c)P(T^c)}\\
+    &=\frac{\left(\frac{3^2}{4^2}+\frac{1}{4^2}\right)\cdot\frac{2}{3}}{\left(\frac{3^2}{4^2}+\frac{1}{4^2}\right)\cdot\frac{2}{3}+\frac{1}{3}}\\
+    &=\frac{20}{36}
+\end{align*}
+And 
+$$P(C|A_1=A_2,T)=\frac{\left(\frac{3}{4}\right)^2}{\left(\frac{3}{4}\right)^2+\left(\frac{1}{4}\right)^2}=\frac{9}{10}$$
+and 
+$$P(C|A_1=A_2,T^c)=0$$
+Therefore we have
+\begin{align*}
+    P(C|A_1=A_2)&=\frac{20}{36}\cdot\frac{9}{10}+0\\
+    &=\boxed{\frac{1}{2}}
+\end{align*}
+\subsection*{(c)}
+Let the random event $A_3$ denote the third response we get
+\begin{align*}
+    P(C|A_1=A_2=A_3)&=P(T|A_1=A_2=A_3)P(C|A_1=A_2=A_3,T)+P(T^c|A_1=A_2=A_3)P(C|A_1=A_2=A_3,T^c)
+\end{align*}
+Since 
+\begin{align*}
+    P(T|A_1=A_2=A_3)&=\frac{P(T)P(A_1=A_2=A_3|T)}{P(A_1=A_2=A_3)}\\
+    &=\frac{P(T)P(A_1=A_2=A_3|T)}{P(A_1=A_2=A_3|T)P(T)+P(A_1=A_2=A_3|T^c)P(T^c)}\\
+    &=\frac{\left(\frac{3^3}{4^3}+\frac{1}{4^3}\right)\cdot\frac{2}{3}}{\left(\frac{3^3}{4^3}+\frac{1}{4^3}\right)\cdot\frac{2}{3}+\frac{1}{3}}\\
+    &=\frac{56}{120}
+\end{align*}
+And 
+$$P(C|A_1=A_2=A_3,T)=\frac{\left(\frac{3}{4}\right)^3}{\left(\frac{3}{4}\right)^3+\left(\frac{1}{4}\right)^3}=\frac{27}{28}$$
+and 
+$$P(C|A_1=A_2,T^c)=0$$
+Therefore we have
+\begin{align*}
+    P(C|A_1=A_2)&=\frac{56}{120}\cdot\frac{27}{28}+0\\
+    &=\boxed{\frac{9}{20}}
+\end{align*}
+\subsection*{(d)}
+Let the random event $A_4$ denote the fourth response we get
+\begin{align*}
+    P(C|A_1=A_2=A_3=A_4)&=P(T|A_1=A_2=A_3=A_4)P(C|A_1=A_2=A_3=A_4,T)+P(T^c|A_1=A_2=A_3=A_4)P(C|A_1=A_2=A_3=A_4,T^c)
+\end{align*}
+Since
+\begin{align*}
+    P(T|A_1=A_2=A_3=A_4)&=\frac{P(T)P(A_1=A_2=A_3=A_4|T)}{P(A_1=A_2=A_3=A_4)}\\
+    &=\frac{P(T)P(A_1=A_2=A_3=A_4|T)}{P(A_1=A_2=A_3=A_4|T)P(T)+P(A_1=A_2=A_3=A_4|T^c)P(T^c)}\\
+    &=\frac{\left(\frac{3^4}{4^4}+\frac{1}{4^4}\right)\cdot\frac{2}{3}}{\left(\frac{3^4}{4^4}+\frac{1}{4^4}\right)\cdot\frac{2}{3}+\frac{1}{3}}\\
+    &=\frac{82}{210}
+\end{align*}
+And
+$$P(C|A_1=A_2=A_3=A+4,T)=\frac{\left(\frac{3}{4}\right)^4}{\left(\frac{3}{4}\right)^4+\left(\frac{1}{4}\right)^4}=\frac{81}{82}$$
+and
+$$P(C|A_1=A_2=A_3=A_4,T^c)=0$$
+Therefore we have
+\begin{align*}
+    P(C|A_1=A_2=A_3=A_4)&=\frac{82}{210}\cdot\frac{81}{82}+0\\
+    &=\boxed{\frac{27}{70}}
+\end{align*}
 \end{document}
