@@ -35,7 +35,7 @@ Therefore $A_1$ will be more likely.
 $$\boxed{20 \choose 15}$$
 \subsubsection*{(ii)}
 $$\boxed{15 \choose 4}$$
-\subsection{(b)}
+\subsection*{(b)}
 If we care about the order in which we place the balls in the buckets, the probability that we place all 5 balls in diffrent buckets is $\frac{1}{5^5}$.
 There are $5!$ ways to order the balls to place into the buckets, so since we do not care about
 the order in which we place the balls in the buckets, the probability that we place all 5 balls in diffrent buckets is $\frac{1}{5^5}\cdot5!=0.0384
@@ -46,7 +46,28 @@ $$\frac{9!}{4!2!3!}=\boxed{1260}$$
 
 \section*{Problem 3}
 \section*{Problem 4}
+\subsection*{(a)}
+The probability that A is not hit is simply $\boxed{1-p_A}$
+\subsection*{(b)}
+The probability that both are hit is simply $\boxed{p_Ap_B}$
+\subsection*{(c)}
 \section*{Problem 5}
+\subsection*{(a)}
+There are $10\choose 3$ to choose 3 socks from 10 if we do not
+care about the color of the socks we pick. If we do care about
+not selecting a pair of socks with the same colors we have
+$\frac{1}{3!}\cdot 10\cdot 8 \cdot 7$ ways to choose 3 socks from 10.
+therefore the probability is $\frac{\frac{1}{3!}\cdot 10\cdot 8 \cdot 7}{{10\choose 3}}=\boxed{0.77777777777}$.
+\subsection*{(b)}
+There are $2s \choose r$ ways to choose $r$ socks from $2s$ if we do not care about the color of the socks we pick. If we do care about
+selecting the socks such that no two have the same color we have that we can do that
+in $\frac{2s}{r!}\frac{(2s-2)!}{(2s-r-1)!}$ ways. 
+Therefore the probability is 
+\begin{align*}
+    \frac{\frac{2s}{r!}\frac{(2s-2)!}{(2s-r-1)!}}{{2s \choose r}}&=\frac{(2s)\frac{(2s-2)!}{(r!)(2s-r-1)!}}{\frac{2s!}{r!(2s-r)!}}\\
+    &=\boxed{\frac{2s-r}{2s-1}}
+\end{align*}
+
 \section*{Problem 6}
 \subsection*{(a)}
 Let the random event denoting whether we recived the correct answer 

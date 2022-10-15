@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1665786860 "c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW2/file.tex" "file.pdf" "file" 1665786861
+["pdflatex"] 1665823431 "c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW2/file.tex" "file.pdf" "file" 1665823432
   "../preamble.tex" 1664768244 540 6e5d0d872ee969408f2cb282b70fe289 ""
-  "c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW2/file.tex" 1665786858 4601 1f485d18df7562bb8bec9cfd7815b8af ""
+  "c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW2/file.tex" 1665823430 5697 9ee42431bd443d3f7ca72c53f68d275d ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1664170015 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1664168346 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1664168346 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -30,6 +30,7 @@
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1664168346 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1664168346 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1664168346 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1664168346 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1664171559 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty" 1664170515 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1664168346 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
@@ -75,8 +76,8 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1664173825 4635069 7677ee69604aae14ed48b153c111a7f7 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1664173939 3058684 372e0c0dae1f62bf1e7332b92ec9e6a1 ""
   "c:/texlive/2022/texmf.cnf" 1664173806 713 e69b156964470283e0530f5060668171 ""
-  "file.aux" 1665786861 128 10a01cf51a3f15a423d10ea0547fb941 "pdflatex"
-  "file.tex" 1665786858 4601 1f485d18df7562bb8bec9cfd7815b8af ""
+  "file.aux" 1665823432 32 4d1825978335c8847f72f7c473f9edc8 "pdflatex"
+  "file.tex" 1665823430 5697 9ee42431bd443d3f7ca72c53f68d275d ""
   (generated)
   "file.aux"
   "file.log"
