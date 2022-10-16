@@ -46,12 +46,12 @@ $$\frac{9!}{4!2!3!}=\boxed{1260}$$
 
 \section*{Problem 3}
 \subsection*{(a)}
-Let $N$ be the number of ways we can choose $r$ from $n$ postive integers 
-such that the order is increasing we have:
-\begin{align*}
-    N&=\sum_{i_1=1}^{n-r+1}\sum_{i_2=i_1+1}^{n-r+2}\cdots\sum_{i_r=i_{r-1}+1}^{n}1\\
-    &=\sum_{i_1=1}^{n-r+1}\sum_{i_2=i_1+1}^{n-r+2}\cdots\sum_{i_{r-1}=i_{r-2}+1}^{n-1}(n-i_{r-1})
-\end{align*}
+There are $\frac{n!}{(n-r)!}$ ways to choose $r$ numbers from the first $n$
+positive integers. Of these, there are $r!$ ways to order the $r$ numbers
+such that their order is increasing. Therefore the probability the numbers are choosen in increasing order
+is just $\boxed{\frac{1}{r!}}$.
+\subsection*{(b)}
+
 \section*{Problem 4}
 \subsection*{(a)}
 Let $p$ be the probability that A is not hit, then we have
@@ -95,18 +95,13 @@ of shots until the duel ends. Furthermore let $H_{AB}$ be the event that A and B
 There are $10\choose 3$ to choose 3 socks from 10 if we do not
 care about the color of the socks we pick. If we do care about
 not selecting a pair of socks with the same colors we have
-$\frac{1}{3!}\cdot 10\cdot 8 \cdot 7$ ways to choose 3 socks from 10.
-therefore the probability is $\frac{\frac{1}{3!}\cdot 10\cdot 8 \cdot 7}{{10\choose 3}}=\boxed{0.77777777777}$.
+$2^3{5\choose 3}$ ways to choose 3 socks from 10.
+therefore the probability is $\frac{2^3{5\choose 3}}{{10\choose 3}}=\boxed{0.66666}$.
 \subsection*{(b)}
 There are $2s \choose r$ ways to choose $r$ socks from $2s$ if we do not care about the color of the socks we pick. If we do care about
 selecting the socks such that no two have the same color we have that we can do that
-in $\frac{2s}{r!}\frac{(2s-2)!}{(2s-r-1)!}$ ways. 
-Therefore the probability is 
-\begin{align*}
-    \frac{\frac{2s}{r!}\frac{(2s-2)!}{(2s-r-1)!}}{{2s \choose r}}&=\frac{(2s)\frac{(2s-2)!}{(r!)(2s-r-1)!}}{\frac{2s!}{r!(2s-r)!}}\\
-    &=\boxed{\frac{2s-r}{2s-1}}
-\end{align*}
-
+in $2^r{s\choose r}$ ways. 
+Therefore the probability is $\boxed{\frac{2^r{s\choose r}}{{2s \choose r}}}$.
 \section*{Problem 6}
 \subsection*{(a)}
 Let the random event denoting whether we recived the correct answer 
