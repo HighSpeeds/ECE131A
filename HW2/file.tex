@@ -51,7 +51,15 @@ positive integers. Of these, there are $r!$ ways to order the $r$ numbers
 such that their order is increasing. Therefore the probability the numbers are choosen in increasing order
 is just $\boxed{\frac{1}{r!}}$.
 \subsection*{(b)}
-
+We have that the there are $n\choose r$ ways to choose
+$r$ numbers from the first $n$ positive integers if we 
+do not care about order.
+Of these, there is only 1 way for L and our choice to have the same
+numbers, so the probability is: $\boxed{\frac{1}{{n\choose r}}}$
+\subsection*{(c)}
+This is a hypergeometric distribution, with $k=k$, $n=r$, $K=r$, $N=n$, 
+so we have the probabiblity of that is:
+$$\boxed{\frac{{r\choose k}{n-r\choose r-k}}{{n\choose r}}}$$
 \section*{Problem 4}
 \subsection*{(a)}
 Let $p$ be the probability that A is not hit, then we have
