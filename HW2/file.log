@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  15 OCT 2022 01:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  15 OCT 2022 17:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -315,45 +315,50 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 35.
 
-[2] [3] [4]
-Overfull \hbox (44.04544pt too wide) detected at line 84
+[2] [3]
+Overfull \hbox (7.44876pt too wide) in paragraph at lines 70--74
+\OT1/cmr/m/n/12 the two du-al-ists do not hit each other for $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1$ rounds, so $[][]$,
+ []
+
+[4] [5]
+Overfull \hbox (44.04544pt too wide) detected at line 123
+[]
+ []
+
+[6]
+Overfull \hbox (190.86375pt too wide) detected at line 144
 []
  []
 
 
-Overfull \hbox (190.86375pt too wide) detected at line 105
+Overfull \hbox (12.21211pt too wide) detected at line 151
 []
  []
 
-[5]
-Overfull \hbox (12.21211pt too wide) detected at line 112
-[]
- []
-
-
-Overfull \hbox (337.68207pt too wide) detected at line 126
+[7]
+Overfull \hbox (337.68207pt too wide) detected at line 165
 []
  []
 
 
-Overfull \hbox (100.3031pt too wide) detected at line 133
+Overfull \hbox (100.3031pt too wide) detected at line 172
 []
  []
 
-[6] [7] (./file.aux) ) 
+[8] [9] (./file.aux) ) 
 Here is how much of TeX's memory you used:
  7611 strings out of 475075
  122857 string characters out of 5783001
- 476099 words of memory out of 5000000
+ 474099 words of memory out of 5000000
  28939 multiletter control sequences out of 15000+600000
  478022 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,13n,82p,371b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on file.pdf (7 pages, 112670 bytes).
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on file.pdf (9 pages, 135750 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

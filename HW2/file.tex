@@ -32,7 +32,7 @@ Therefore $A_1$ will be more likely.
 \section*{Problem 2}
 \subsection*{(a)}
 \subsubsection*{(i)}
-$$\boxed{20 \choose 15}$$
+$$\boxed{19 \choose 15}$$
 \subsubsection*{(ii)}
 $$\boxed{15 \choose 4}$$
 \subsection*{(b)}
@@ -45,12 +45,51 @@ This is a multnomial permutation so we have
 $$\frac{9!}{4!2!3!}=\boxed{1260}$$
 
 \section*{Problem 3}
+\subsection*{(a)}
+Let $N$ be the number of ways we can choose $r$ from $n$ postive integers 
+such that the order is increasing we have:
+\begin{align*}
+    N&=\sum_{i_1=1}^{n-r+1}\sum_{i_2=i_1+1}^{n-r+2}\cdots\sum_{i_r=i_{r-1}+1}^{n}1\\
+    &=\sum_{i_1=1}^{n-r+1}\sum_{i_2=i_1+1}^{n-r+2}\cdots\sum_{i_{r-1}=i_{r-2}+1}^{n-1}(n-i_{r-1})
+\end{align*}
 \section*{Problem 4}
 \subsection*{(a)}
-The probability that A is not hit is simply $\boxed{1-p_A}$
+Let $p$ be the probability that A is not hit, then we have
+$$p=p_A(1-p_B)+(1-p_B)(1-p_A)p$$
+$$p(1-(1-p_B)(1-p_A))=(1-p_A)p_B$$
+$$p=\boxed{\frac{(1-p_B)p_A}{1-(1-p_B)(1-p_A)}}$$
 \subsection*{(b)}
-The probability that both are hit is simply $\boxed{p_Ap_B}$
+Let probability that the duel ends with both being hit be $p_{AB}$
+We have:
+\begin{align*}
+    p_{AB}=p_Ap_B+(1-p_A)(1-p_B)p_{AB}\\
+    p_{AB}\left(1-(1-p_A)(1-p_B)\right)=p_Ap_B\\
+    p_{AB}=\boxed{\frac{p_Ap_B}{1-(1-p_A)(1-p_B)}}
+\end{align*}
 \subsection*{(c)}
+The probabiblity is that the dual ends after n rounds, is the probability
+that the two dualists do not hit each other for $n-1$ rounds, so $\left((1-p_A)(1-p_B)\right)^{n-1}$,
+multiplied by the probabiblity that one or both get hit at the $n$ th round
+so $1-(1-p_A)(1-p_B)$. Therefore the total probabiblity is 
+$$\boxed{\left((1-p_A)(1-p_B)\right)^{n-1}\cdot(1-(1-p_A)(1-p_B))}$$
+\subsection*{(d)}
+Let $N$ be the random variable representing the number of rounds
+of shots until the duel ends. Furthermore let $H_A$ be the event that A is not hit. 
+From part (a) we have $P(H_A)=\frac{(1-p_B)p_A}{1-(1-p_B)(1-p_A)}$
+we have
+\begin{align*}
+    P(N=n|H_A)&=\frac{P(N=n,H_A)}{P(H_A)}\\
+    &=\frac{\left((1-p_A)(1-p_B)\right)^{n-1}p_A(1-p_B)}{\frac{(1-p_B)p_A}{1-(1-p_B)(1-p_A)}}\\
+    &=\boxed{\left((1-p_A)(1-p_B)\right)^{n-1}\left(1-(1-p_B)(1-p_A)\right)}
+\end{align*}
+\subsection*{(e)}
+Let $N$ be the random variable that representing the number of rounds
+of shots until the duel ends. Furthermore let $H_{AB}$ be the event that A and B are hit, we have
+\begin{align*}
+    P(H_{AB}|N=n)&=\frac{\left((1-p_A)(1-p_B)\right)^{n-1}p_Ap_B}{\left((1-p_A)(1-p_B)\right)^{n-1}\cdot(1-(1-p_A)(1-p_B))}\\
+    &=\boxed{\frac{p_Ap_B}{1-(1-p_B)(1-p_A)}}
+\end{align*}
+
 \section*{Problem 5}
 \subsection*{(a)}
 There are $10\choose 3$ to choose 3 socks from 10 if we do not
