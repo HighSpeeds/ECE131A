@@ -32,7 +32,7 @@ Therefore $A_1$ will be more likely.
 \section*{Problem 2}
 \subsection*{(a)}
 \subsubsection*{(i)}
-$$\boxed{19 \choose 15}$$
+$$\boxed{18 \choose 4}$$
 \subsubsection*{(ii)}
 $$\boxed{15 \choose 4}$$
 \subsection*{(b)}
@@ -94,8 +94,8 @@ we have
 Let $N$ be the random variable that representing the number of rounds
 of shots until the duel ends. Furthermore let $H_{AB}$ be the event that A and B are hit, we have
 \begin{align*}
-    P(H_{AB}|N=n)&=\frac{\left((1-p_A)(1-p_B)\right)^{n-1}p_Ap_B}{\left((1-p_A)(1-p_B)\right)^{n-1}\cdot(1-(1-p_A)(1-p_B))}\\
-    &=\boxed{\frac{p_Ap_B}{1-(1-p_B)(1-p_A)}}
+    P(N=n|H_{AB})&=\frac{\left((1-p_A)(1-p_B)\right)^{n-1}p_Ap_B}{\frac{p_Ap_B}{1-(1-p_A)(1-p_B)}}\\
+    &=\boxed{\left((1-p_A)(1-p_B)\right)^{n-1}\left(1-(1-p_B)(1-p_A)\right)}
 \end{align*}
 
 \section*{Problem 5}
