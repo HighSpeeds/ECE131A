@@ -30,4 +30,69 @@ $$P(12\leq X\leq 17)=\boxed{\frac{6}{1000}}$$
 $$P(X=j)=\left(\frac{4}{5}\right)^{j-1}\frac{1}{5}$$
 \subsection*{(b)}
 $$P(X=j)=\boxed{\frac{1}{5}, j=1,2,3,4,5}$$
+\section*{Problem 4}
+\subsection*{(a)}
+Let the bernoulli random variable $X_i$ be the event 
+that the ith plate is isolated, then we have that 
+$$P(X_i=1)=\frac{10}{14}\frac{9}{13}\frac{5}{15}3=0.4945$$
+Therefore 
+$$E[X]=15E[X_i]=\boxed{7.417}$$
+\subsection*{(b)}
+Let the bernoulli random variable $Y_i$ be the event
+that the ith plate is semi happy, then we have
+$$P(Y_i=1)=2\frac{10}{13}\frac{5}{15}\frac{4}{14}3=0.439$$
+Therefore
+$$E[Y]=15E[Y_i]=\boxed{6.593}$$
+\subsection*{(c)}
+Let the bernoulli random variable $Z_i$ be the event
+that the ith plate is joyous, We have
+$$P(Z_i=1)=1-P(X_i=1)-P(Y_i=1)=0.0665$$
+Therefore
+$$E[Z]=15E[Z_i]=\boxed{0.989}$$
+\section*{Problem 5}
+\subsection*{(a)}
+$$\boxed{(1-p)^{n-1}p}$$
+\subsubsection{(b)}
+$$\boxed{(1-p)^{n-2}p^2}$$
+\subsection*{(c)}
+The success are distrubted in a way that
+is independent on where it occurs so 
+the probability that the $k$ success occurs at 
+$j_1,j_2,\dots,j_k$ is always the same no matter what
+$j_1,j_2,\dots,j_k$ so long as $0<j_1,j_2,\dots,j_k\leqn$
+\section*{Problem 6}
+\subsection*{(a)}
+Let the number of accidents be denoted by a random variable
+$N$. $N$ is distributed as a possion random variable with
+$\lambda=3$. Therefore
+$$P(N=5)=\boxed{\frac{3^5e^{-3}}{5!}}$$
+\subsection*{(b)}
+$$P(N<3)=e^{-3}\left(1+\frac{12}{5!}\right)$$
+\subsection*{(c)}
+$$P(N\geq 2)=1-P(N<2)=\boxed{1-e^{-3}\left(1+\frac{3}{5!}\right)}$$
+\section*{Problem 7}
+\subsection*{(a)}
+Rate for 1 hr for fans of both teams is $14$ per hour,
+so for 3 hours it would be $\boxed{42}$.
+\subsection*{(b)}
+if the rat is $14$ per hour, then the rate for 
+20 minutes would be $14/3$ per 20 minutes, since this will
+still be distrubuted as a Poisson we have that the probability 
+of only 1 fan of either the Yankees or the Red Sox enter the store
+is just $\boxed{e^{-\frac{14}{3}}\frac{14}{3}}$.
+\section*{Problem 8}
+\subsection*{(a)}
+There are $N\choose n$ ways to pick out $n$ balls from the $N$
+balls in the urn. But to choose k blue balls from the $b$ balls
+we have $b\choose k$ ways to do so, and we have 
+$r\choose n-k$ ways to choose the remaining $n-k$ red balls. Therefore the 
+probability of choosing $k$ blue balls is
+$$\boxed{\frac{{b\choose k}{r \choose n-k}}{{N\choose n}}}$$
+\subsection*{(b)}
+\begin{align*}
+    \lim_{N,b,r\to \infty}\frac{{b\choose k}{r \choose n-k}}{{N\choose n}}&=
+        \lim_{N,b,r\to \infty}{n\choose k}\frac{b\cdot(b-1)\cdots (b-k+1)\cdot r\cdot (r-1)\cdots (r-k+1)}{N\cdot (N-1)\cdots (N-n+1)}\\
+        &=\lim_{N,b,r\to \infty}{n\choose k}\frac{b^k\cdot r^{n-k}}{N^n}\\
+        &={n\choose k}p^k(1-p)^{n-k}
+\end{align*}
 \end{document}
