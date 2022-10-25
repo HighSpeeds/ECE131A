@@ -67,7 +67,7 @@ $N$. $N$ is distributed as a possion random variable with
 $\lambda=3$. Therefore
 $$P(N=5)=\boxed{\frac{3^5e^{-3}}{5!}}$$
 \subsection*{(b)}
-$$P(N<3)=e^{-3}\left(1+\frac{12}{5!}\right)$$
+$$P(N<3)=e^{-3}\left(1+\frac{3}{2}+\frac{9}{3!}\right)$$
 \subsection*{(c)}
 $$P(N\geq 2)=1-P(N<2)=\boxed{1-e^{-3}\left(1+\frac{3}{5!}\right)}$$
 \section*{Problem 7}
@@ -91,7 +91,7 @@ $$\boxed{\frac{{b\choose k}{r \choose n-k}}{{N\choose n}}}$$
 \subsection*{(b)}
 \begin{align*}
     \lim_{N,b,r\to \infty}\frac{{b\choose k}{r \choose n-k}}{{N\choose n}}&=
-        \lim_{N,b,r\to \infty}{n\choose k}\frac{b\cdot(b-1)\cdots (b-k+1)\cdot r\cdot (r-1)\cdots (r-k+1)}{N\cdot (N-1)\cdots (N-n+1)}\\
+        \lim_{N,b,r\to \infty}{n\choose k}\frac{b\cdot(b-1)\cdots (b-k+1)\cdot r\cdot (r-1)\cdots (r-(n-k)+1)}{N\cdot (N-1)\cdots (N-n+1)}\\
         &=\lim_{N,b,r\to \infty}{n\choose k}\frac{b^k\cdot r^{n-k}}{N^n}\\
         &={n\choose k}p^k(1-p)^{n-k}
 \end{align*}
