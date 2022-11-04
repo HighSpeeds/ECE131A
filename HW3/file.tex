@@ -51,15 +51,17 @@ Therefore
 $$E[Z]=15E[Z_i]=\boxed{0.989}$$
 \section*{Problem 5}
 \subsection*{(a)}
-$$\boxed{(1-p)^{n-1}p}$$
+$$\frac{(1-p)^{n-1}p}{{n\choose 1}(1-p)^{n-1}p}=\boxed{\frac{1}{n}}$$
 \subsection*{(b)}
-$$\boxed{(1-p)^{n-2}p^2}$$
+$$\frac{(1-p)^{n-2}p^2}{{n\choose 2}(1-p)^{n-2}p^2}=\boxed{\frac{1}{n(n-2)}}$$
 \subsection*{(c)}
 The success are distrubted in a way that
 is independent on where it occurs so 
 the probability that the $k$ success occurs at 
 $j_1,j_2,\dots,j_k$ is always the same no matter what
-$j_1,j_2,\dots,j_k$ so long as $0<j_1,j_2,\dots,j_k\leq n$
+$j_1,j_2,\dots,j_k$ so long as $0<j_1,j_2,\dots,j_k\leq n$,
+and given these $k$ successes, the probability
+that a specific trail is successful is $\frac{1}{{n\choose k}}$,
 \section*{Problem 6}
 \subsection*{(a)}
 Let the number of accidents be denoted by a random variable
@@ -67,7 +69,7 @@ $N$. $N$ is distributed as a possion random variable with
 $\lambda=3$. Therefore
 $$P(N=5)=\boxed{\frac{3^5e^{-3}}{5!}}$$
 \subsection*{(b)}
-$$P(N<3)=e^{-3}\left(1+\frac{12}{5!}\right)$$
+$$P(N<3)=e^{-3}\left(1+\frac{3}{2}+\frac{9}{3!}\right)$$
 \subsection*{(c)}
 $$P(N\geq 2)=1-P(N<2)=\boxed{1-e^{-3}\left(1+\frac{3}{5!}\right)}$$
 \section*{Problem 7}
@@ -91,7 +93,7 @@ $$\boxed{\frac{{b\choose k}{r \choose n-k}}{{N\choose n}}}$$
 \subsection*{(b)}
 \begin{align*}
     \lim_{N,b,r\to \infty}\frac{{b\choose k}{r \choose n-k}}{{N\choose n}}&=
-        \lim_{N,b,r\to \infty}{n\choose k}\frac{b\cdot(b-1)\cdots (b-k+1)\cdot r\cdot (r-1)\cdots (r-(n-k)+1)}{N\cdot (N-1)\cdots (N-k+1)}\\
+        \lim_{N,b,r\to \infty}{n\choose k}\frac{b\cdot(b-1)\cdots (b-k+1)\cdot r\cdot (r-1)\cdots (r-(n-k)+1)}{N\cdot (N-1)\cdots (N-n+1)}\\
         &=\lim_{N,b,r\to \infty}{n\choose k}\frac{b^k\cdot r^{n-k}}{N^n}\\
         &={n\choose k}p^k(1-p)^{n-k}
 \end{align*}
