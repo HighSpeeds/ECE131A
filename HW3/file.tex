@@ -91,7 +91,7 @@ $$\boxed{\frac{{b\choose k}{r \choose n-k}}{{N\choose n}}}$$
 \subsection*{(b)}
 \begin{align*}
     \lim_{N,b,r\to \infty}\frac{{b\choose k}{r \choose n-k}}{{N\choose n}}&=
-        \lim_{N,b,r\to \infty}{n\choose k}\frac{b\cdot(b-1)\cdots (b-k+1)\cdot r\cdot (r-1)\cdots (r-k+1)}{N\cdot (N-1)\cdots (N-n+1)}\\
+        \lim_{N,b,r\to \infty}{n\choose k}\frac{b\cdot(b-1)\cdots (b-k+1)\cdot r\cdot (r-1)\cdots (r-(n-k)+1)}{N\cdot (N-1)\cdots (N-k+1)}\\
         &=\lim_{N,b,r\to \infty}{n\choose k}\frac{b^k\cdot r^{n-k}}{N^n}\\
         &={n\choose k}p^k(1-p)^{n-k}
 \end{align*}
