@@ -1,8 +1,8 @@
-PWD c:/Users/Lawrence/Desktop/UCLA/ECE131A/Quiz3
+PWD c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW4
 INPUT c:/texlive/2022/texmf.cnf
 INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Lawrence/Desktop/UCLA/ECE131A/Quiz3/file.tex
+INPUT c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW4/file.tex
 OUTPUT file.log
 INPUT ../preamble.tex
 INPUT ../preamble.tex
@@ -440,7 +440,6 @@ INPUT file.aux
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
