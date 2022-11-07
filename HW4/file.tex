@@ -7,7 +7,9 @@ Then this must be a geometric distribution, so the pmf would be
 $$p(Y=y)=(1-p)^{y-1}p$$
 \section*{Problem 2}
 \subsection*{(a)}
+$$\boxed{\frac{\frac{1}{1}}{\sum_{n=1}^{10}\frac{1}{n^s}}}$$
 \subsection*{(b)}
+$$\boxed{\frac{\sum_{n=6}^{10}\frac{1}{n^s}}{\sum_{n=1}^{10}\frac{1}{n^s}}}$$
 \section*{Problem 3}
 \subsection*{(a)}
 we have
@@ -31,5 +33,93 @@ $$E[Y]=E[12X+1]=12E[X]+1=12\cdot4.40+1=\boxed{53.8}$$
 We have
 $$\text{Var}(X)=12^2\text{Var}(Y)=12^2\left(\frac{1}{12}(0.2)^2\right)=0.48$$
 \section*{Problem 5}
-
+\subsection*{(a)}
+We have that as a function of the distance $d$ of the shorter part in porportion
+to the entire rod,
+so evenly distributed from $0$ to $0.5$. then the ratio of the lengths is
+$$r(d)=\frac{d}{1-d}$$ 
+Since this function is invertible for the range of $d\in[0,0.5]$, we have
+$$d(r)=\frac{r}{r+1}$$
+thus we have that the probability density function is
+$$f_R(r)=f_d(d(r))\left|\frac{d d(r)}{dr}\right|$$
+$$f_R(r)=\boxed{\frac{2}{(r+1)^2}}$$
+\subsection*{(b)}
+$$E[R]=\int_{0}^{1}\frac{2r}{(r+1)^2}dr=0.38629436112$$
+\subsection*{(c)}
+$$E[R^2]=\int_{0}^{1}\frac{2r^2}{(r+1)^2}dr=0.22741127776$$
+$$Var(R)=E[R^2]-E[R]^2=\boxed{0.07818794432}$$
+\section*{Problem 6}
+This is an erlang distibution, with $k=7$, this's cdf 
+$P(X\leq 10)=1-\sum_{n=0}^{6}\frac{(10\lambda)^n}{n!}e^{-10\lambda}$, so we have
+that the probability of wait for more than 10 minutes is
+$$1-P(X\leq 10)=\boxed{\sum_{n=0}^{6}\frac{(10\lambda)^n}{n!}e^{-10\lambda}}$$
+\section*{Problem 7}
+\subsection*{(a)}
+Since the probability fo getting $X=1$ is $0$ for a countinuous random variable,
+we have that 
+$$P(Y\geq1)=P(X\geq0)=\boxed{1}$$
+\subsection*{(b)}
+$$P(Y\geq10)=P(X\geq9)=\boxed{e^{-27}}$$
+\subsection*{(c)}
+$$P(Y\geq x)=P(X\geq x-1)=\boxed{e^{-3(x-1)}}$$
+\section*{Problem 8}
+The standard z score for a standard normal $Z$ to have 
+$P(Z\leq z)=0.1492$ is $-1.03987$, so we have that
+$$x=\mu+\sigma z=-1.03987\cdot2\sqrt{2}+22=\boxed{19.0588034858}$$
+\section*{Problem 9}
+\subsection*{(a)}
+Let $X=\int_{-\infty}^{\infty}e^{-x^2}dx$, then we have that
+\begin{align*}
+    X^2&=\int_{-\infty}^{\infty}e^{-x^2}dx\int_{-\infty}^{\infty}e^{-y^2}dydx\\
+    &=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-x^2-y^2}dxdy\\
+    &=\int_{0}^{2\pi}\int_{0}^{\infty}e^{-r^2}rdrd\theta\\
+    &=2\pi\int_{0}^{\infty}e^{-r^2}rdr\\
+    &=\pi
+\end{align*}
+Thus we have that $X=\sqrt{\pi}$, then we have that 
+\begin{align}
+    \int_{-\infty}^{\infty}f(x)dx&=\frac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx
+\end{align}
+Let $y=x-\mu$, then we have that
+\begin{align*}
+    \int_{-\infty}^{\infty}f(x)dx&=\frac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{y^2}{2\sigma^2}}dy
+\end{align*}
+Let $z=\frac{y}{\sigma\sqrt{2}}$, then we have that $dz=\frac{dy}{\sigma\sqrt{2}}$,
+thus we have that 
+\begin{align*}
+    \int_{-\infty}^{\infty}f(x)dx&=\frac{1}{\sqrt{\pi}}\int_{-\infty}^{\infty}e^{-z^2}dz\\
+    &=1
+\end{align*}
+Thus $f(x)$ could be a density function
+\subsection*{(b)}
+we have through integration by parts
+\begin{align*}
+    \sqrt{2\pi}(1-\Phi(x))&=\int_{x}^{+\infty}e^{-\frac{y^2}{2}}dy\\
+    &=\left.-y^{-1}e^{-\frac{y^2}{2}}\right|_{x}^{\infty}-\int_{x}^{\infty}y^{-2}e^{-\frac{y^2}{2}}dy\\
+    &=x^{-1}e^{-\frac{x^2}{2}}-\int_{x}^{\infty}y^{-2}e^{-\frac{y^2}{2}}dy\\
+    &= x^{-1}e^{-\frac{x^2}{2}}+\left.y^{-3}e^{-\frac{y^2}{2}}\right|_{x}^{\infty}+\int_{x}^{\infty}y^{-3}e^{-\frac{y^2}{2}}dy\\
+    &=(x^{-1}-x^{-3})e^{-\frac{x^2}{2}}+\int_{x}^{\infty}y^{-3}e^{-\frac{y^2}{2}}dy
+\end{align*}
+Therefore since $\int_{x}^{\infty}y^{-3}e^{-\frac{y^2}{2}}dy>0$ and $\int_{x}^{\infty}y^{-2}e^{-\frac{y^2}{2}}dy> 0$ we have
+$$(x^{-1}-x^{-3})e^{-\frac{x^2}{2}}<\sqrt{2\pi}(1-\Phi(x))<x^{-1}e^{-\frac{x^2}{2}}$$
+\subsection*{(c)}
+For $x>0$ we have that 
+$$P(X>x+\frac{a}{x}|X>x)=\frac{P(X>x+\frac{a}{x})}{P(X>x)}$$
+Now we use the squeeze theorem, we have that 
+$$\frac{\left(x+\frac{a}{x}\right)^{-1}e^{-\frac{1}{2}(x+\frac{a}{x})^2}}
+{(x^{-1}-x^{-3})e^{-\frac{x^2}{2}}}
+>\frac{P(X>x+\frac{a}{x})}{P(X>x)}>
+\frac{\left(\left(x+\frac{a}{x}\right)^{-1}-
+\left(x+\frac{a}{x}\right)^{-3}\right)e^{-\frac{1}{2}(x+\frac{a}{x})^2}}
+    {x^{-1}e^{-\frac{x^2}{2}}}$$
+since $x+\frac{a}{x}\to x$ as $x\to\infty$ we have that 
+$$\lim_{x\to\infty}\frac{\left(x+\frac{a}{x}\right)^{-1}e^{-\frac{1}{2}(x+\frac{a}{x})^2}}
+{(x^{-1}-x^{-3})e^{-\frac{x^2}{2}}}=e^{-a}$$
+and
+$$\lim_{x\to\infty}\frac{\left(\left(x+\frac{a}{x}\right)^{-1}-
+\left(x+\frac{a}{x}\right)^{-3}\right)e^{-\frac{1}{2}(x+\frac{a}{x})^2}}
+    {x^{-1}e^{-\frac{x^2}{2}}}=e^{-a}$$
+Thus we have that 
+$$P\left(X>x+\frac{a}{x}|X>x\right)\to e^{-a}$$
+As $x\to\infty$ 
 \end{document}
