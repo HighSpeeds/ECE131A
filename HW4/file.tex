@@ -7,9 +7,9 @@ Then this must be a geometric distribution, so the pmf would be
 $$p(Y=y)=(1-p)^{y-1}p$$
 \section*{Problem 2}
 \subsection*{(a)}
-$$\boxed{\frac{\frac{1}{1}}{\sum_{n=1}^{10}\frac{1}{n^s}}}$$
+$$\frac{\frac{1}{1}}{\sum_{n=1}^{10}\frac{1}{n^s}}=\boxed{0.341417152147}$$
 \subsection*{(b)}
-$$\boxed{\frac{\sum_{n=6}^{10}\frac{1}{n^s}}{\sum_{n=1}^{10}\frac{1}{n^s}}}$$
+$$\frac{\sum_{n=6}^{10}\frac{1}{n^s}}{\sum_{n=1}^{10}\frac{1}{n^s}}=\boxed{0.22043083593}$$
 \section*{Problem 3}
 \subsection*{(a)}
 we have
@@ -51,17 +51,17 @@ $$Var(R)=E[R^2]-E[R]^2=\boxed{0.07818794432}$$
 \section*{Problem 6}
 This is an erlang distibution, with $k=7$, this's cdf 
 $P(X\leq 10)=1-\sum_{n=0}^{6}\frac{(10\lambda)^n}{n!}e^{-10\lambda}$, so we have
-that the probability of wait for more than 10 minutes is
-$$1-P(X\leq 10)=\boxed{\sum_{n=0}^{6}\frac{(10\lambda)^n}{n!}e^{-10\lambda}}$$
+that the probability of wait for more than 10 minutes is, since $\lambda=1$
+$$1-P(X\leq 10)=\boxed{\sum_{n=0}^{6}\frac{(10)^n}{n!}e^{-10}=0.130141420882}$$
 \section*{Problem 7}
 \subsection*{(a)}
 Since the probability fo getting $X=1$ is $0$ for a countinuous random variable,
 we have that 
-$$P(Y\geq1)=P(X\geq0)=\boxed{1}$$
+$$P(Y\geq1)=P(X>1)=\boxed{e^{-3}}$$
 \subsection*{(b)}
-$$P(Y\geq10)=P(X\geq9)=\boxed{e^{-27}}$$
+$$P(Y\geq10)=P(X>9)=\boxed{e^{-30}}$$
 \subsection*{(c)}
-$$P(Y\geq x)=P(X\geq x-1)=\boxed{e^{-3(x-1)}}$$
+$$P(Y\geq x)=P(X> x)=\boxed{e^{-3(x)}}$$
 \section*{Problem 8}
 The standard z score for a standard normal $Z$ to have 
 $P(Z\leq z)=0.1492$ is $-1.03987$, so we have that
