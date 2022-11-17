@@ -1,0 +1,93 @@
+\include{"../preamble.tex"}
+\title{ECE 131A HW 5}
+\begin{document}
+\maketitle
+\section*{Problem 1}
+\subsection*{(a)}
+the standard score $z=1.37996$ results in 
+$$P(Z\leq z)=0.9162=1-\frac{1}{2}(1-0.8324)$$
+Thus we have that $c=\boxed{1.37996}$.
+\subsection*{(b)}
+$c=2.3\cdot 1.37996=\boxed{3.173908}$
+\section*{Problem 2}
+\subsection*{(a)}
+The corresponding $z$ value for a standard normal is 
+$$\frac{1-0.8875}{0.10625}=1.05882352941$$
+Thus we have that
+$$P(Z\leq z)=0.85515$$
+\subsection*{(b)}
+We have that this is effectively
+$$P\left(\frac{13-14.2}{1.7}\leq Z\leq \frac{15-14.2}{1.7}\right)=0.68103-0.24013=\boxed{0.4409}$$
+\subsection*{(c)}
+We have that the probability that one book is heavy is 
+$$1-P(Z\leq \frac{16-14.2}{1.7})=0.14484$$
+Therefore the probability that there is 3 heavy books is a binomial
+distribution and thus the probability is 
+$${10\choose 3}0.1448^3(1-0.1448)^7=\boxed{0.12189}$$
+\section*{Problem 3}
+\subsection*{(a)}
+We have that the area of the quadrilateral is $6+2=8$ and 
+that the area with $X\geq 3$ is $2$ so $P(X\geq 3)=\frac{2}{8}=\boxed{\frac{1}{4}}$
+\subsection*{(b)}
+we have that the area of the quadrilateral is $6+2=8$ and
+the area with $Y\geq 1$ is $4+\frac{1}{2}=4.5$ so then we have that 
+$P(Y\geq 1)=\frac{4.5}{8}=\boxed{\frac{9}{16}}$
+\subsection*{(c)}
+The area of the quadrilateral is $6+2=8$ and the area with $X\leq 1$ and $Y\leq 1$ is $1$ so then we have that
+the probability is $\frac{1}{8}=\boxed{\frac{1}{8}}$
+\section*{Problem 4}
+we have 
+\begin{align*}
+    E[X]&=\int_{0}^{\infty}\int_{0}^{\infty}x\frac{1}{750}e^{-\left(\frac{x}{150}+\frac{y}{30}dydx\right)}\\
+    &=\int_{0}^{\infty}\frac{x}{150}e^{-\frac{x}{150}}\int_{0}^{\infty}\frac{1}{30}e^{-\frac{y}{30}}dydx\\
+    &=\boxed{150}
+\end{align*}
+\section*{Problem 5}
+\subsection*{(a)}
+let the triangle be denoted as $R$ then we have
+$$f(x,y)=\begin{cases}
+    \frac{2}{9} & \text{if } (x,y)\in R\\
+    0 & \text{otherwise}
+\end{cases}$$
+Thus we have that
+\begin{align*}
+    E[X]&=\int_{0}^{3}x\int_{0}^{3-x}\frac{2}{9}dydx\\
+    &=\int_{0}^{3}\frac{2x}{9}(3-x)dx\\
+    &=\boxed{1}
+\end{align*}
+and also
+\begin{align*}
+    E[Y]&=\int_{0}^{3}\int_{0}^{3-x}\frac{2y}{9}dydx\\
+    &=\int_{0}^{3}\frac{(3-x)^2}{9}dx\\
+    &=\boxed{1}
+\end{align*}
+$$E[X+Y]=\boxed{2}$$
+\subsection*{(b)}
+We have that 
+$$E[X]=1$$
+and 
+\begin{align*}
+    E[X]&=\int_{0}^{3}x^2\int_{0}^{3-x}\frac{2}{9}dydx\\
+    &=\int_{0}^{3}\frac{2x^2}{9}(3-x)dx\\
+    &=\boxed{1.8}
+\end{align*}
+Thus we have that
+$$Var(X)=E[X^2]-E[X]^2=\boxed{0.8}$$
+\section*{Problem 6} 
+we have that 
+$$P(X=l)=\begin{cases}
+    \frac{3}{11}\frac{2}{10} & \text{if } l=2\\
+    \frac{16}{11}\frac{3}{10} & \text{if } l=1\\
+    \frac{8}{11}\frac{7}{10} & \text{if } l=0\\
+    0 & \text{otherwise}
+\end{cases}$$
+Then we have that 
+$$E[X]=0.5454545454545454$$
+and
+$$E[X^2]=0.6545454545454545$$
+And thus we have that 
+$$Var(X)=\boxed{0.3570247933884298}$$
+
+
+
+\end{document}
