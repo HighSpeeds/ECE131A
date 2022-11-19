@@ -1,0 +1,59 @@
+\include{"../preamble.tex"}
+\title{ECE 131A Quiz 4}
+\begin{document}
+\maketitle
+\section*{Problem 1}
+\subsection*{(a)}
+We have that the corresponding standard score is 
+$z=\frac{5-4}{0.75}$
+And thus we have that the probability that a blade of grass
+is 5 inches or taller is 
+$$P(Z\geq\frac{4}{3})=1-0.90878=\boxed{0.09122}$$
+\subsection*{(b)}
+We have that the probability of picking up a blade of
+grass that is 5 inches or taller is $0.09122$. so the number
+of blades of grass a child would need to pick up before reaching 
+a blade of grass that is 5 inches or taller is a geometric random
+variable with parameter $0.09122$. Thus the expected number of blades
+is $1/0.09122=\boxed{10.9625}$
+\subsection*{(c)}
+This is a binomial random variable, with $n=10$ and $p=0.09122$.
+Thus the expected number of blades of grass that are 5 inches or taller
+is $np=\boxed{0.9122}$
+\section*{Problem 2}
+\subsection*{(a)}
+$$E[X]=\int_{0}^{10}x\frac{(10-x)^3}{2500}dx=\boxed{2}$$
+$$E[X^2]=\int_{0}^{10}x^2\frac{(10-x)^3}{2500}dx=\frac{20}{3}$$
+$$Var(X)=\boxed{\frac{8}{3}}$$
+\subsection*{(b)}
+Using the central limit theorem, we can approximate the 
+distribution of the sum of 200 of these random variables
+as a normal distribution with mean $200\cdot2=400$ and variance
+$200\cdot\frac{8}{3}=533.33$. Thus the standard
+score of $420$ is
+$$z=\frac{420-400}{\sqrt{533.33}}=0.866028110127$$
+Thus 
+$$P(Z>z)=1-0.80676=\boxed{0.19324}$$
+\section*{Problem 3}
+\subsection*{(a)}
+We have that
+\begin{align*}
+    F(X,Y)&=\int_{0}^{x}\int_{0}^{y}f(x,y)dydx\\
+    &=\int_{0}^{X}\int_{0}^{Y}(x+y)dydx\\
+    &=\int_{0}^{X}xY+\frac{Y^2}{2}dx\\  
+    &=\boxed{\frac{X^2Y}{2}+\frac{Y^2X}{2}}
+\end{align*}
+And thus we have that 
+$$F(1,1)=\boxed{1}$$
+Which is what we intuitively expect.
+\subsection*{(b)}
+We have that
+$$f(x)=\int_{0}^{1}f(x,y)dy=\int_{0}^{1}(x+y)dy=\boxed{x+\frac{1}{2}}$$
+and 
+$$f(y)=\int_{0}^{1}f(x,y)dx=\int_{0}^{1}(x+y)dx=\boxed{y+\frac{1}{2}}$$
+\subsection*{(c)}
+No since 
+$$f(x)f(y)=(x+\frac{1}{2})(y+\frac{1}{2})\neq x+y$$
+\end{document}
+
+
