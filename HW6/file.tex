@@ -115,15 +115,70 @@ $$\frac{1}{2}\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y-1)^2}{2\sigma^2}}+\frac{1
 \section*{Problem 9}
 \subsection*{(a)}
 $$\phi_z(t)=\frac{2}{2-it}\cdot \frac{10}{10-it}$$
-\subsection{(b)}
-$$\phi_z(t)=-\frac{20}{8}\frac{1}{10-it}+\frac{20}{8}\frac{1}{2-it}$$
+\subsection*{(b)}
+$$\phi_z(t)=\frac{20}{8}\frac{1}{2-it}-\frac{20}{8}\frac{1}{10-it}$$
 Computing the inverse fourier transform we get
-$$f(z)=\frac{20}{8}e^{-2z}-\frac{20}{8}e^{-10z} \text{ when } z\geq 0 and f(z)=0 \text{ when } z<0$$
+$$f(z)=\frac{20}{8}e^{-2z}-\frac{20}{8}e^{-10z} \text{ when } z\geq 0 \text{ and } f(z)=0 \text{ when } z<0$$
 \section*{Problem 10}
 $$E[T]=\frac{1}{3}\cdot 3+\frac{2}{3}E[T]+\frac{1}{3}(5+7)$$
 $$E[T]=15$$
 \section*{Problem 11}
 \subsection*{(a)}
+We have that the number of bears that are yellow $Y$ have the following probability
+\begin{align*}
+    P(Y=n)&=\sum_{k=n}^{\infty} \frac{\lambda^k e^{-\lambda}}{k!}{
+        k\choose n} p^n (1-p)^{k-n}\\
+        &=p^ne^{-\lambda}\sum_{k=n}^{\infty}\lambda^{k} \frac{1}{n!(k-n)!}(1-p)^{k-n}\\
+        &=\frac{p^ne^{-\lambda}}{n!}\sum_{k=n}^{\infty}\lambda^{k} \frac{1}{(k-n)!}(1-p)^{k-n}\\
+        &=\frac{p^n\lambda^ne^{-\lambda}}{n!}e^{\lambda(1-p)}\\
+        &=\frac{p^n\lambda^ne^{-p\lambda}}{n!}
+\end{align*}
+Therefore it is distributed as a possion with parameter $p\lambda$.
+\subsection*{(b)}
+We have that 
+$$E[Y|B=7,R=3]=E[Y]=\frac{18}{3}=\boxed{6}$$
+\section*{Problem 12}
+\subsection{(a)}
+We have that the $f(x,y)=\frac{1}{8}$ for $0\leq x\leq 5$ and $0\leq y\leq 2$ and $f(x,y)=0$ otherwise.
+Therefore we have that 
+$$f_y(y)=\int_{0}^{3+y}\frac{1}{8}dx=\frac{3+y}{8}$$
+for $0\leq y\leq 2$ and $f_y(y)=0$ otherwise.
+\subsection{(b)}
+We have
+$$f_{X|Y}(x|y)=\frac{f(x,y)}{f_y(y)}=\frac{\frac{1}{8}}{\frac{3+y}{8}}=\frac{1}{3+y}$$
+for $0\leq x\leq 3+y$ and $f_{X|Y}(x|y)=0$ otherwise.
+\subsection{(c)}
+$$\int_{0}^{3+y}\frac{1}{3+y}dx=1$$
+Therefore it is a valid density function
+\subsection{(d)}
+We have that
+$$E[X|Y=y]=\int_{0}^{3+y}\frac{x}{3+y}dx=\frac{3+y}{2}$$
+\section*{Probelem 13}
+We have that from chebshev's inequality we have that
+$$P(|X-\mu|>\epsilon)\leq \frac{\lambda}{t^2\epsilon^2}$$
+\section*{Problem 14}
+Let $E[X_i]=\mu$ then we have 
+$$E[S_n]=n\mu$$
+And 
+$$Var(S_n)=n\sigma^2+2\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}\sigma^2 \rho^{j-i}$$
+\section*{Problem 15}
+\subsection*{(a)}
+We have from markov's inequality 
+$$P(X>1000)\leq \boxed{\frac{750}{1000}}$$
+\subsection*{(b)}
+Using chebshev we have that 
+$$P(|X-750|>250)\leq \boxed{\frac{100^2}{250^2}}$$
+\section*{Problem 16}
+\subsection*{(a)}
+We have that the probability that the height of the corn $H$
+is bounded by the markov inequality:
+$$P(H\geq 6)\leq \frac{5.2}{6}$$
+\subsection*{(b)}
+by chebshev's inequality we have that
+$$P(|H-5.2|\geq 0.2)\leq \frac{1}{16}$$
+
+
+
 
 
 

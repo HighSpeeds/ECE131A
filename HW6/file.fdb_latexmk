@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1670040597 "c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW6/file.tex" "file.pdf" "file" 1670040598
+["pdflatex"] 1670051557 "c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW6/file.tex" "file.pdf" "file" 1670051558
   "../preamble.tex" 1664768244 540 6e5d0d872ee969408f2cb282b70fe289 ""
-  "c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW6/file.tex" 1670040595 5975 64ebff3cd6c0bd2084292daa53ad32eb ""
+  "c:/Users/Lawrence/Desktop/UCLA/ECE131A/HW6/file.tex" 1670051554 8079 62c623732b09c3b946e55c330956b5eb ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1664170015 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1664168346 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1664168346 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -78,8 +78,8 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1664173825 4635069 7677ee69604aae14ed48b153c111a7f7 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1664173939 3058684 372e0c0dae1f62bf1e7332b92ec9e6a1 ""
   "c:/texlive/2022/texmf.cnf" 1664173806 713 e69b156964470283e0530f5060668171 ""
-  "file.aux" 1670040598 128 bba39905def8f953c3d6b73eaf4cadb4 "pdflatex"
-  "file.tex" 1670040595 5975 64ebff3cd6c0bd2084292daa53ad32eb ""
+  "file.aux" 1670051558 417 ee208374387241b2172514d2d34a7d64 "pdflatex"
+  "file.tex" 1670051554 8079 62c623732b09c3b946e55c330956b5eb ""
   (generated)
   "file.aux"
   "file.log"
