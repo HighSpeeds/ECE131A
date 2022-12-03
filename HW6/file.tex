@@ -15,8 +15,8 @@ to run out during a semester to be greater than $0.99$
 The number of errors in 100 transmission can be estimated
 as a normal distribution with mean of 15 and variance of $100\cdot0.15\cdot0.85=12.75$,
 therefore the probability of having more than 20 errors has a corresponding 
-$Z$ value of $0.392$ and therefore a corresponding probability of
-$\boxed{0.65247}$.
+$Z$ value of $1.4$ and therefore a corresponding probability of
+$\boxed{0.91924}$.
 \section*{Problem 3}
 \subsection*{(a)}
 We have that 
@@ -32,7 +32,7 @@ $$\Sigma^{-1}(\mu-X)=\frac{1}{5}\begin{bmatrix}
 and therefore we have that
 $$(\mu-X)^T\Sigma^{-1}(\mu-X)=\frac{3}{5}(\mu_1-x_1)^2+\frac{2}{5}(\mu_2-x_2)(\mu_1-x_1)+\frac{2}{5}(\mu_2-x_2)^2$$
 Therefore we have that
-$$f(x_1,x_2)=(2\pi)^{-1}\frac{1}{\sqrt{det(5)}}e^{-\frac{3}{10}(\mu_1-x_1)^2-\frac{1}{5}(\mu_2-x_2)(\mu_1-x_1)-\frac{1}{5}(\mu_2-x_2)^2}$$
+$$f(x_1,x_2)=(2\pi)^{-1}\frac{1}{\sqrt{5}}e^{-\frac{3}{10}(1-x_1)^2-\frac{1}{5}(2-x_2)(1-x_1)-\frac{1}{5}(2-x_2)^2}$$
 \subsection*{(b)}
 We have that Y is distributed as an normal distribution with 
 mean $A\mu+B=4$ and variance $A\Sigma A^T=3$ therefore we have that
@@ -43,19 +43,15 @@ Therefore we have that given that $Z$ is a standard normal distribution
 $$P(Y\geq 2)=P(Z\geq \frac{2-4}{\sqrt{3}})=1-0.12425=\boxed{0.87575}$$
 \section*{Problem 4}
 \subsection*{(a)}
-We have that 
-$$Cov(Y_i,Y_i)=2$$
-and when  $i\neq j$
-$$Cov(Y_i,Y_j)=1$$
 Therefore we have that the covariance matrix is 
 $$\Sigma=\begin{bmatrix}
-2&1&1\\
+2&1&0\\
 1&2&1\\
-1&1&2
+0&1&2
 \end{bmatrix}$$
 \subsection*{(b)}
 We have that the pdf of $Y$ is
-$$f(y_1,y_2,y_3)=(2\pi)^{-\frac{3}{2}}\frac{1}{2}e^{\frac{1}{4}(y_1y_2+y_2y_3+y_3y_1)
+$$f(y_1,y_2,y_3)=(2\pi)^{-\frac{3}{2}}\frac{1}{2}e^{\frac{1}{4}(y_1y_2+y_2y_3)
 -\frac{3}{8}(y_1^2+y_2^2+y_3^2)}$$
 \subsection*{(c)}
 We have that the distirbution for $Y_1$ and $Y_2$ is a 
@@ -69,14 +65,67 @@ Likewise we have that the distribution for $Y_1$ and $Y_3$ is a
 given by a linear transformation of $[Y_1,Y_2,Y_3]$ with
 $A=\begin{bmatrix}1&0&0\\0&0&1\end{bmatrix}$. Therefore we have
 that this mu is $A\mu=\begin{bmatrix}0\\0\end{bmatrix}$ and
-the covariance matrix is $A\Sigma A^T=\begin{bmatrix}2&1\\1&2\end{bmatrix}$.
+the covariance matrix is $A\Sigma A^T=\begin{bmatrix}2&0\\0&2\end{bmatrix}$.
 Therefore we have that
-$$f(y_1,y_3)=\frac{1}{2\pi}\frac{1}{\sqrt{3}}e^{-\frac{1}{3}(y_1^2+y_3^2-y_1y_3)}$$
+$$f(y_1,y_3)=\frac{1}{2\pi}\frac{1}{2}e^{-\frac{1}{4}(y_1^2+y_3^2)}$$
 \subsection*{(d)}
-we can simply use a linear transformation $A=\Sigma^{-1}=
-\begin{bmatrix}\frac{3}{4}&-\frac{1}{4}&-\frac{1}{4}\\ -\frac{1}{4}&\frac{3}{4}&-\frac{1}{4}\\ -\frac{1}{4}&-\frac{1}{4}&\frac{3}{4}\end{bmatrix}$.
-and with this we will have the resulting covariance matrix is 
-$I$.
+we can simply use a linear transformation $$A=\begin{bmatrix}1&-1&0\\0&1&-1\\-1 & 0 & 1\end{bmatrix}$$
+\section*{Problem 6}
+We can approximate the sum of the 64 numbers as a gaussian with 
+mean 0 and variance $64\frac{1}{12}=\frac{16}{3}$ therefore we have that
+the probability of the sum being greater than 4 is the same as the probability
+that a $Z$, a standard normal distribution, is greater than $\frac{4}{\sqrt{\frac{16}{3}}}=\sqrt{3}$, 
+which is $1-0.95837=\boxed{0.04163}$.
+\section*{Problem 7}
+\subsection*{(a)}
+We have that 
+$$f(y|0)=\frac{1}{2\alpha}e^{-\frac{|y+1|}{\alpha}}$$
+\subsection*{(b)}
+We have that
+$$f(y|1)=\frac{1}{2\alpha}e^{-\frac{|y-1|}{\alpha}}$$
+\subsection*{(c)}
+We have that
+$$f(y)=0.5\frac{1}{2\alpha}e^{-\frac{|y-1|}{\alpha}}+0.5\frac{1}{2\alpha}e^{-\frac{|y+1|}{\alpha}}$$
+\subsection*{(d)}
+We have that the probability of error given that 
+"0" was sent is
+$$\int_{0}^{\infty}\frac{1}{2\alpha}e^{-\frac{y+1}{\alpha}}dy=\frac{e^{-\frac{1}{\alpha}}}{2}$$
+and the probability of error given that "1" was sent is
+$$\int_{-\infty}^{0}\frac{1}{2\alpha}e^{-\frac{1-y}{\alpha}}dy=\frac{e^{-\frac{1}{\alpha}}}{2}$$
+\subsection*{(e)}
+Therefore we have that the probability of error is
+$$\frac{1}{2}\frac{e^{-\frac{1}{\alpha}}}{2}+\frac{1}{2}\frac{e^{-\frac{1}{\alpha}}}{2}=\frac{e^{-\frac{1}{\alpha}}}{2}$$
+\section*{Problem 8}
+\subsection*{(a)}
+$$f_Y(y|X=+1)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y-1)^2}{2\sigma^2}}$$
+$$f_Y(y|X=-1)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y+1)^2}{2\sigma^2}}$$
+\subsection*{(b)}
+We have that for $y<0$, $f_Y(y|X=+1)<f_Y(y|X=-1)$ and for $y>0$, $f_Y(y|X=+1)>f_Y(y|X=-1)$
+and at $y=0$ we have that $f_Y(y|X=+1)=f_Y(y|X=-1)$. Therefore we have this 
+is equivalent to saying that when $Y<0$ we decide "0" and 
+when $Y\geq0$ we decide "1".
+\subsection*{(c)}
+The probability of error given that "0" was sent is
+$$\int_{0}^{\infty}\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y-1)^2}{2\sigma^2}}dy=0.00003$$
+and the probability of error given that "1" was sent is
+$$\int_{-\infty}^{0}\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y+1)^2}{2\sigma^2}}dy=0.00003$$
+\subsection*{(d)}
+Therefore we have that the probability of error is
+$$\frac{1}{2}\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y-1)^2}{2\sigma^2}}+\frac{1}{2}\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y+1)^2}{2\sigma^2}}=0.00003$$
+\section*{Problem 9}
+\subsection*{(a)}
+$$\phi_z(t)=\frac{2}{2-it}\cdot \frac{10}{10-it}$$
+\subsection{(b)}
+$$\phi_z(t)=-\frac{20}{8}\frac{1}{10-it}+\frac{20}{8}\frac{1}{2-it}$$
+Computing the inverse fourier transform we get
+$$f(z)=\frac{20}{8}e^{-2z}-\frac{20}{8}e^{-10z} \text{ when } z\geq 0 and f(z)=0 \text{ when } z<0$$
+\section*{Problem 10}
+$$E[T]=\frac{1}{3}\cdot 3+\frac{2}{3}E[T]+\frac{1}{3}(5+7)$$
+$$E[T]=15$$
+\section*{Problem 11}
+\subsection*{(a)}
+
+
 
 
 
