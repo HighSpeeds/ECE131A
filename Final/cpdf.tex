@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\author{Lawrence Liu}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pdfpages}
+\newcommand{\Laplace}{\mathscr{L}}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\usepackage{amssymb}
+\usepackage{empheq}
+
+\newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}}
+\lstset{style=mystyle}
+
+\usepackage{geometry}
+\geometry{a4paper,margin=0.25in}
+\begin{document}
+\underline{\textbf{Some Common Continous Random Variables}}\\
+\begin{tabular}{ | c| c | c |}
+Normal & Exponential & Uniform \\
+\hline
+$X\sim N(\mu,\sigma^2)$ & $X\sim Exp(\lambda)$ & $X\sim U(a,b)$ \\
+
+$x\in [-\infty ,\infty]$ & $x\in [0,\infty]$ & $x\in [a,b]$ \\
+
+$f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ & $f(x)=\lambda e^{-\lambda x}$ & $f(x)=\frac{1}{b-a}$ \\
+
+$E(X)=\mu$ & $E(X)=\frac{1}{\lambda}$ & $E(X)=\frac{a+b}{2}$\\
+
+$Var(X)=\sigma^2$ & $Var(X)=\frac{1}{\lambda^2}$ & $Var(X)=\frac{(b-a)^2}{12}$\\
+$\phi_X(\omega)=e^{j\mu\omega-\frac{\sigma^2\omega^2}{2}}$ & $\phi_X(\omega)=\frac{\lambda}{\lambda-\j\omega}$ & $\phi_X(\omega)=\frac{e^{j\omega b}-e^{j\omega a}}{j\omega(b-a)}$\\
+\hline
+\end{tabular}
+\begin{tabular}{ | c| c |}
+    Erlang & Chi Squared\\
+    \hline
+    $X\sim Erlang(\lambda,k)$ & $X\sim \chi^2(k)$\\
+    $x\in [0,\infty]$ & $x\in [0,\infty]$\\
+    $f(x)=\frac{\lambda^k}{(k-1)!}x^{k-1}e^{-\lambda x}$ & $f(x)=\frac{1}{2^{k/2}\Gamma(k/2)}x^{k/2-1}e^{-x/2}$\\
+    $E(X)=\frac{k}{\lambda}$ & $E(X)=k$\\
+    $Var(X)=\frac{k}{\lambda^2}$ & $Var(X)=2k$\\
+    $\phi_X(\omega)=\left(\frac{\lambda}{\lambda-j\omega}\right)^k$ & $\phi_X(\omega)=\left(\frac{1}{1-j2\omega}\right)^{k/2}$\\
+    \hline
+\end{tabular}
+\begin{tabular}{|c|}
+    Laplacian Random Variable\\
+    \hline
+    $X\sim Lap(\alpha)$\\
+    $x\in [-\infty ,\infty]$\\
+    $f(x)=\frac{\alpha}{2}e^{-\alpha|x|}$\\
+    $E(X)=0$\\
+    $Var(X)=\frac{2}{\alpha^2}$\\
+    $\phi_X(\omega)=\frac{\alpha^2}{\alpha^2+\omega^2}$\\
+    \hline
+\end{tabular}\\
+The Erlang distribution is the sum of
+$k$ independent exponential random variables with rate $\lambda$.
+The Chi Squared distribution is the sum of the squares of $k$ independent standard normal random variables.
+
+\end{document}
